@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/main.css">
+
+
+	<!--responsividade-->
+	<link rel="stylesheet" href="style/responsive.css">
+
+	<!--owl css-->
+	<link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+	<link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+
+	<title>NETFLIX CLONE</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-header">
+			<h2 class="logo">NETFLIX</h2>
+			<nav>
+				<a href="#">Inicio</a>
+				<a href="#">Séries</a>
+				<a href="#">Filmes</a>
+				<a href="#">Documentário</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="filme-principal">
+			<div class="container">
+				<h3 class="titulo">HOUSE OF CARDS</h3>
+				<p class="descricao">descrição com a sinopse do filme</p>
+				<div class="botoes">
+					<button role="button" class="botao">
+						<i class="fas fa-play"></i>
+						
+						ASSISTIR AGORA
+					</button>
+					<button role="button" id="bttrailer" class="botao" onclick="selecionaTrailer()">
+						<i class="fas fa-info-circle"></i>
+						VER TRAILER
+					</button>
+				</div>
+			</div>
+			<div class="container-trailer">
+				<section class="trailer" hidden="true">
+					<iframe 
+						autoplay="true"
+						src="#"
+					></iframe>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<div class="carrosel-filmes">
+		<div class="owl-carousel owl-theme" id="lista-filmes">
+			<div class="item" id="item1" onclick="selecionaFilme('item1')">
+				<img class="box-filme" src="img/mini1.jpg">
+				<img id="capa" src="img/bad-boys-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item2" onclick="selecionaFilme('item2')">
+				<img class="box-filme" src="img/mini2.jpg">
+				<img id="capa" src="img/servant-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item3" onclick="selecionaFilme('item3')">
+				<img class="box-filme" src="img/mini3.jpg">
+				<img id="capa" src="img/lupin-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item4" onclick="selecionaFilme('item4')">
+				<img class="box-filme" src="img/mini4.jpg">
+				<img id="capa" src="img/star-wars-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item5" onclick="selecionaFilme('item5')">
+				<img class="box-filme" src="img/mini5.jpg">
+				<img id="capa" src="img/vingadores-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item6" onclick="selecionaFilme('item6')">
+				<img class="box-filme" src="img/mini6.jpg">
+				<img id="capa" src="img/good-doctor-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item7" onclick="selecionaFilme('item7')">
+				<img class="box-filme" src="img/mini7.jpg">
+				<img id="capa" src="img/cobra-kai-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item8" onclick="selecionaFilme('item8')">
+				<img class="box-filme" src="img/mini8.jpg">
+				<img id="capa" src="img/vikings-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item9" onclick="selecionaFilme('item9')">
+				<img class="box-filme" src="img/mini9.jpg">
+				<img id="capa" src="img/riverdale-capa.jpg" style="display: none;">
+			</div>
+			<div class="item" id="item10" onclick="selecionaFilme('item10')">
+				<img class="box-filme" src="img/mini10.jpg">
+				<img id="capa" src="img/lucifer-capa.jpg" style="display: none;">
+			</div>
+		</div>
+	</div>
+
+	<script src="https://kit.fontawesome.com/bbf9a7884a.js"></script>
+	<script src="js/owl/jquery.min.js"></script>
+	<script src="js/owl/owl.carousel.min.js"></script>
+	<script src="js/owl/setup.js"></script>
+	<script src="js/owl/seleciona-filme.js"></script>
+
+</body>
+
+</html>
